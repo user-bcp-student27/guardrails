@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "description": "Herramientas permitidas y bloqueadas para los agentes de ReqFlow (Día 4)",
+  "allowed": [
+    "read_file",
+    "write_file",
+    "run_tests",
+    "search_code",
+    "lint_code",
+    "format_code"
+  ],
+  "blocked": [
+    "web_search",
+    "send_email",
+    "send_notification",
+    "delete_file",
+    "database_write",
+    "http_request_external",
+    "execute_shell"
+  ],
+  "notes": {
+    "read_file": "Solo archivos del repo clonado en .tmp/<GITHUB_REPO>",
+    "write_file": "Solo en ramas de feature, nunca en main/master directamente",
+    "run_tests": "Solo el suite de tests del repo en alcance (pytest / mvn test / npm test)",
+    "execute_shell": "Bloqueado — cualquier ejecución de shell requiere aprobación humana"
+  }
+}

@@ -1,0 +1,18 @@
+langgraph>=0.2.0
+langchain-core>=1.0
+github-copilot-sdk>=1.0.19,<2
+python-dotenv>=1.0.0
+requests>=2.32.0
+httpx>=0.27.0
+rich>=13.0.0
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ¿Cuándo activar pip-system-certs?
+# - Solo actívalo si estás en una laptop o red corporativa con proxy / TLS (Zscaler, BCP, etc.)
+#   y las peticiones HTTPS en Python fallan con: "CERTIFICATE_VERIFY_FAILED".
+# - En una máquina personal o red normal, DÉJALO COMENTADO.
+#
+# NOTA DE INSTALACIÓN EN WINDOWS:
+# Si lo descomentas, instala con: python -m pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────────────────────────
+# pip-system-certs>=4.0
